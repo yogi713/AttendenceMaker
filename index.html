@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendence taker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <label class="label" for="name">Name of the Student</label>
+        <div class="input_add">
+            <input class="input" type="text" id="name">
+            <button class="add" onclick="added(String(document.getElementById('name').value))">Add</button>
+        </div>
+        <a class="a" onclick="remove_elements()">Submit</a>
+    </div>
+    <div id="names-container">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
